@@ -1,6 +1,27 @@
+# change record type (0 - none, 1 - h264, 2 - mjpeg)
+writeb 0x044CC9FC 0x02
+writeb 0x044CC9FD 0x02
+
+Force MJPEG quality (percent from 0 to 100)
+# Use hexademical percent value
+# Example:
+# 0% => 0x00000000
+# 10% => 0x0000000A
+# 100% => 0x00000064
+# 50% => 0x00000032
+writel 0x045F237C 0x00000064
+  
+  
+  
+  
+
 # change VBR max percent from average bitrate
 writeb 0x04136E94 0xA0
 
+  
+  
+  
+  
 # 4K UHD 29.97 fps
 writel 0x044CAF00 0x03E7FFFF
 writel 0x044CAF1C 0x00000001
