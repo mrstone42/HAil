@@ -1,26 +1,8 @@
-# change record type (0 - none, 1 - h264, 2 - mjpeg)
-writeb 0x044CC9FC 0x02
-writeb 0x044CC9FD 0x02
-
-Force MJPEG quality (percent from 0 to 100)
-# Use hexademical percent value
-# Example:
-# 0% => 0x00000000
-# 10% => 0x0000000A
-# 100% => 0x00000064
-# 50% => 0x00000032
-writel 0x045F237C 0x00000064
-  
-  
-  
-  
+ 
 
 # change VBR max percent from average bitrate
 writeb 0x04136E94 0xA0
 
-  
-  
-  
   
 # 4K UHD 29.97 fps
 writel 0x044CAF00 0x03E7FFFF
@@ -32,15 +14,6 @@ writel 0x044CAF54 0x03E7FFFF
 writel 0x044CAF70 0x00000001
 writeb 0x044CAF74 0x03
 
-# HD 239.76 fps
-writel 0x044CB0F8 0x03E7FFFF
-writel 0x044CB114 0x00000001
-writeb 0x044CB118 0x03
-
-# HD 59.9401 fps
-writel 0x044CB1A0 0x03E7FFFF
-writel 0x044CB1BC 0x00000001
-writeb 0x044CB1C0 0x03
 
 # 4K DCI 25 fps
 writel 0x044CB3EC 0x03E7FFFF
@@ -62,32 +35,3 @@ writel 0x044CB92C 0x03E7FFFF
 writel 0x044CB948 0x00000001
 writeb 0x044CB94C 0x03
 
-# FullHD 50 fps
-writel 0x044CB980 0x03E7FFFF
-writel 0x044CB99C 0x00000001
-writeb 0x044CB9A0 0x03
-
-# FullHD 25 fps
-writel 0x044CB9D4 0x03E7FFFF
-writel 0x044CB9F0 0x00000001
-writeb 0x044CB9F4 0x03
-
-# HD 50 fps
-writel 0x044CBA28 0x03E7FFFF
-writel 0x044CBA44 0x00000001
-writeb 0x044CBA48 0x03
-
-# FullHD 25 fps
-writel 0x044CBB24 0x03E7FFFF
-writel 0x044CBB40 0x00000001
-writeb 0x044CBB44 0x03
-
-# HD 119.88 fps
-writel 0x044CBD1C 0x03E7FFFF
-writel 0x044CBD38 0x00000001
-writeb 0x044CBD3C 0x03
-
-# FullHD 24 fps
-writel 0x044CBE18 0x03E7FFFF
-writel 0x044CBE34 0x00000001
-writeb 0x044CBE38 0x03
