@@ -1,4 +1,3 @@
-  
 # change VBR max percent from average bitrate
 writeb 0x04136E94 0xA0
 
