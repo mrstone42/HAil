@@ -3,6 +3,10 @@
 # change VBR max percent from average bitrate
 writeb 0x04136E94 0xA0
 
+# change record type (0 - none, 1 - h264, 2 - mjpeg)
+writeb 0x044CC9FC 0x02
+writeb 0x044CC9FD 0x02 
+ 
   
 # 4K UHD 29.97 fps
 writel 0x044CAF00 0x03E7FFFF
